@@ -47,6 +47,7 @@ class HomeView extends GetView<HomeController> {
       appBar: AppBar(
         title: const Text('HomeView'),
         centerTitle: true,
+        backgroundColor: Colors.red,
         actions: [
           IconButton(
             onPressed: () => cAuth.logout(), 
@@ -88,12 +89,12 @@ class HomeView extends GetView<HomeController> {
               itemBuilder: (context, index) => ListTile(
                 leading: CircleAvatar(
                   child: Text('${index + 1}'),
-                  backgroundColor: Colors.white,
+                  backgroundColor: Color.fromARGB(255, 251, 228, 103),
                 ),
                 title: Text(
-                    "${(listAllDocs[index].data() as Map<String, dynamic>)["name"]}"),
+                    "${(listAllDocs[index].data() as Map<String, dynamic>)["nama"]}"),
                 subtitle: Text(
-                    "${(listAllDocs[index].data() as Map<String, dynamic>)["price"]}"),
+                    "${(listAllDocs[index].data() as Map<String, dynamic>)["npm"]}"),
                 trailing: IconButton(
                   onPressed: () => showOption(listAllDocs[index].id), 
                   icon: Icon(Icons.more_vert)),
