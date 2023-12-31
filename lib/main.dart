@@ -6,6 +6,7 @@ import 'package:project_get/app/controllers/auth_controller.dart';
 import 'app/routes/app_pages.dart';
 import 'app/utils/loading.dart';
 import 'firebase_options.dart';
+import 'api_services.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

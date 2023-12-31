@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import '../../../controllers/auth_controller.dart';
 import '../../../routes/app_pages.dart';
 import '../controllers/signup_controller.dart';
+import 'package:dio/dio.dart';
 
 class SignupView extends GetView<SignupController> {
   final cAuth = Get.find<AuthController>();
